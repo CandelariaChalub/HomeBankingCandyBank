@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./indexrosa.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="app">
+
+
+
+
+
+   <div class="container textrosa mt-1 ">
+      <section id="formHolder">
+   
+         <div class="row">
+   
+            <!-- Brand Box -->
+            <div class="col-sm-6 brand">
+               <a href="#" class="logo">CB <span>.</span></a>
+   
+               <div class="heading">
+                  <h2>¿You want to be a client?</h2>
+                  <span>Register with your personal data and start testing the best bank</span>
+               </div>
+
+            </div>
+   
+   
+            <!-- Form Box -->
+            <div class="col-sm-6 form">
+   
+               <!-- Login Form -->
+               <div class="login form-peice switched">
+                  <form class="login-form" action="#" method="post" @submit.prevent="logIn">
+                     <div class="form-group">
+                        <label for="loginemail">Email Adderss</label>
+                        <input  v-model="email" type="email" name="loginemail" id="loginemail" required>
+                     </div>
+   
+                     <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input v-model="password" type="password" name="loginPassword" id="loginPassword" required>
+                     </div>
+   
+                     <div class="CTA">
+                        <input type="submit" id="signIn" value="Login">
+                        <a href="#" class="switch">I'M NEW</a>
+                     </div>
+                  </form>
+               </div><!-- End Login Form -->
+   
+   
+               <!-- Signup Form -->
+               <div class="signup form-peice">
+                  <form class="signup-form" action="#" method="post" @submit.prevent="register">
+   
+                     <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input v-model="name" type="text" name="username" id="name" class="name">
+                        <span class="error"></span>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="name">Last Name</label>
+                        <input v-model="lastName" type="text" name="lastnamee" id="lastName" class="name">
+                        <span class="error"></span>
+                     </div>
+   
+                     <div class="form-group">
+                        <label for="email">Email Adderss</label>
+                        <input v-model="email" type="email" name="emailAdress" id="email" class="email">
+                        <span class="error"></span>
+                     </div>
+   
+                     <div class="form-group">
+                        <label for="password">Password</label>
+                        <input v-model="password" type="password" name="passwordd" id="password" class="pass">
+                        <span class="error"></span>
+                     </div>
+   
+                     <div class="form-group">
+                        <label for="passwordCon">Confirm Password</label>
+                        <input type="password" v-model="passwordConfirm" name="passwordContra" id="passwordCon" class="passConfirm">
+                        <span class="error"></span>
+                     </div>
+   
+                     <div class="CTA">
+                        <input type="submit" value="Signup Now" id="signUp" id="submit">
+
+
+                        <a href="#" class="switch">I HAVE AN ACCOUNT</a>
+                     </div>
+                  </form>
+               </div><!-- End Signup Form -->
+            </div>
+         </div>
+ 
+      </section>
+ 
+ 
+   
+ 
+ </div>
+ 
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./loginmove.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Account / Candy Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="shortcut icon" href="./assetsweb/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styleloans.css">
+
+</head>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header" id="app">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="candylogo fw-semibold">CandyBank</div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger ms-2 close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner">
+                                        </span>
+                                    </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner">
+                                    </span>
+                                </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                        
+            </div>
+            <div class="app-header__content">
+                
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0 ">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                        {{client.name}} {{client.lastName}}
+                                    </div>
+                                    <div class="widget-subheading">
+                                        {{client.email}}
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <button type="button" class="btn-shadow p-1 btn candybtn btn-sm show-toastr-example">
+                                        <i class="fa text-white fa-solid fa-user pr-1 pl-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger btn-danger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger btn-danger hamburger--elastic mobile-toggle-nav">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading candytext">Dashboard</li>
+                            <li>
+                                <a class=" fw-semibold " href="./accounts.html" >
+                                    <i class="metismenu-icon bi bi-clipboard-data fs-3"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading candytext">Cards</li>
+                            <li>
+                                <a class="fw-semibold" href="./cards.html">
+                                    <i class="metismenu-icon bi bi-credit-card fs-3"></i>
+                                    Cards
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading candytext">transactions</li>
+                            <li>
+                                <a class="fw-semibold"  href="./transactions.html">
+                                    <i class="metismenu-icon bi bi-cash-coin fs-3"></i>
+                                    Transactions
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading candytext">Loans</li>
+                            <li>
+                                <a class="mm-active fw-semibold" href="#">
+                                    <i class="metismenu-icon bi bi-bank2 fs-3">
+                                    </i>Loans
+                                </a>
+                            </li>
+                            <li>
+                                <a class="espacio fw-semibold" @click="logOut" href="#">
+                                    <i class="metismenu-icon bi bi-box-arrow-right fs-3">
+                                    </i>Log Out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-main__outer maincandy">
+                <div class="main-content">
+
+                    <div class="mt-3 p-5 align-items-center">
+                        <section class="card container m-0 grid">
+                            <div class="card__container d-grid">
+                                <article class="card__content grid"  v-for="loan in loans">
+                                    <div class="card__pricing">
+                                    <div class="card__pricing-number">
+                                    {{percentFormat.format(loan.interest)}}
+                                    </div>
+                                    <span class="card__pricing-month">/increase</span>
+                                    </div>
+                            
+                                    <header class="card__header">
+                                    <div class="card__header-circle grid">
+                                        <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-pricing-card-using-html-and-css/free-coin.png" alt="" class="card__header-img">
+                                    </div>
+                            
+                                    <span class="card__header-subtitle candytext">LOAN TYPE</span>
+                                    <h1 class="card__header-title">{{loan.name}}</h1>
+                                    </header>
+                            
+                                    <p class="card__list-description">Payments: {{loan.payments}}</p>
+
+                                    <p class="card__list-description">Max Amount: {{loan.maxAmount}}</p>
+
+                                    <p class="card__list-description">The Loan has a interest rate of: {{percentFormat.format(loan.interest)}}</p>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <form action="" class="transacciones container m-0 d-flex flex-column justify-content-evenly align-items-center p-5 createCards"
+                    id="requestLoan">
+                    <h2 class="text-center">Request a loan</h2>
+                    <div class="container d-flex flex-column">
+                        <label for="sourceAccounts">Select the loan</label>
+                        <select name="loan" id="loan" v-model="id" class="form-select" @change="findRequestLoan">
+                            <option value="" selected>--</option>
+                            <option :value="loan.id" v-for="loan in loans">
+                                {{loan.name}}</option>
+                        </select>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <label for="sourceAccounts">Associated account</label>
+                        <select name="accounts" id="sourceAccounts" v-model="accountNumber" class="form-select">
+                            <option value="" selected>--</option>
+                            <option :value="account.number" v-for="account in accounts">
+                                {{account.number}}</option>
+                        </select>
+                    </div>
+                    <div class="container d-flex flex-column"  v-for="loan in selectedLoan">
+                        <input class="form-control" type="number" min="0.00" :max="loan.maxAmount" step="0.05" value="1.00"
+                            placeholder="Amount to request" v-model="amount">
+                        <span>You can request up to: {{moneyFormat.format(loan.maxAmount)}}</span>
+                    </div>
+                    <div class="container d-flex flex-column">
+                        <label for="sourceAccounts">Number of installments to pay</label>
+                        <select name="description" id="description" v-model="payments" class="form-select" @change="paymentValue">
+                            <option value="" selected>--</option>
+                            <option :value="payment" v-for="payment in optionPayments">{{payment}}</option>
+                        </select>
+                        <span>Value of each installment: {{moneyFormat.format(valuePayment)}}</span>
+                    </div>
+                    <input type="button" value="Request" class="btn button candybtn text-white" @click="alertRequestLoan">
+                </form>
+
+                    <img class="walletcard d-none d-lg-block" src="./assetsweb/img/dibujoloans.svg" alt="">
+           
+                </div>
+            </div>
+    
+    </div>
+    </div>
+
+    <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assetsweb/js/loans.js"></script>
+</body>
+</html>

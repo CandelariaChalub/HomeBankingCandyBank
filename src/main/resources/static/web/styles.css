@@ -1,0 +1,415 @@
+.debit{
+    color: red;
+}
+
+.credit{
+    color: green;
+}
+
+.gold{
+  background: linear-gradient(-45deg, rgba(255,230,72,1) 4%, rgba(249,228,95,1) 34%, rgba(246,229,120,1) 51%, rgba(249,228,95,1) 62%, rgba(255,230,72,1) 92%);
+}
+
+
+.titanium{
+  background: linear-gradient(-45deg, rgba(0,0,0,1) 4%, rgba(6,6,6,1) 34%, rgba(27,27,26,1) 51%, rgba(6,6,6,1) 62%, rgba(0,0,0,1) 92%);
+}
+
+.silver{
+  background: linear-gradient(-45deg, rgba(189,188,188,1) 4%, rgba(200,200,199,1) 34%, rgba(207,206,202,1) 51%, rgba(200,199,199,1) 62%, rgba(189,188,188,1) 92%);
+}
+
+
+.scrollbar-sidebar{
+  color: blueviolet !important;
+}
+
+a{
+  text-decoration: none;
+}
+
+.candytext{
+  color: rgb(255, 4, 176) !important;
+}
+
+.candybtn{
+  color: rgb(255, 4, 176);
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(255, 4, 176);
+  --bs-btn-border-color: rgb(255, 4, 176);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(255, 4, 176);
+  --bs-btn-hover-border-color: rgb(255, 4, 176);
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(255, 4, 176);
+  --bs-btn-active-border-color: rgb(255, 4, 176);
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgb(255, 4, 176);
+  --bs-btn-disabled-border-color: rgb(255, 4, 176);
+}
+
+.candynav{
+  background-color: rgba(254,224,226,255);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-single {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.none{
+  text-decoration: none !important;
+  color: black;
+}
+
+.transactionsclass{
+  width: 50rem;
+  margin-left: 2rem;
+}
+
+.nohover{
+  border: none;
+}
+
+.card-header{
+  background-color: #ffc8ee;
+}
+
+.metismenu-icon {
+  color: black !important;
+}
+
+.espacio{
+  position: absolute;
+  margin-top: 23rem !important;
+}
+
+.logocandy{
+  margin-left: .2mm;
+}
+
+.maincandy{
+  background-color: rgb(254, 224, 244) ;
+}
+
+.metismenu-icon {
+  opacity: 0.9 !important;
+}
+
+.widget-heading{
+  opacity: 1 !important;
+}
+
+.widget-subheading{
+  opacity: 0.7 !important;
+}
+
+.close-sidebar-btn{
+  color: rgb(255, 4, 176) !important;
+}
+
+.mm-active{
+  background: rgb(254, 224, 244)  !important;
+}
+
+.hamburger-inner{
+  background-color: rgb(255, 4, 176) !important;
+}
+.hamburger-inner::before{
+  background-color: rgb(255, 4, 176) !important;
+}
+
+.hamburger-inner::after{
+  background-color: rgb(255, 4, 176) !important;
+}
+
+.app-theme-white.fixed-header .app-header__logo{
+  background-color: #ffffff ;
+}
+
+.walletcard{
+  position: absolute;
+  bottom: 9px !important;
+  right: 5rem !important;
+  height: 400px;
+  color: #fff;
+}
+
+.homecard{
+  position: absolute;
+  bottom: 9px !important;
+  right: 3.5rem !important;
+  height: 400px;
+  color: #fff;
+}
+
+.transactioncard{
+  position: absolute;
+  bottom: 9px !important;
+  right: 5rem !important;
+  height: 400px;
+  color: #fff;
+}
+
+
+/*CARDS*/
+.cardy{
+width: 320px;
+height: 190px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective:600px;
+
+}
+
+.card__part{
+  box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+  position: absolute;
+z-index: 1000;
+  left: 0;
+  display: inline-block;
+    width: 320px !important;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+
+    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.card__front{
+  padding: 18px;
+-webkit-transform: rotateY(0);
+-moz-transform: rotateY(0);
+}
+
+.card__back {
+  padding: 18px 0;
+-webkit-transform: rotateY(-180deg);
+-moz-transform: rotateY(-180deg);
+}
+
+.card__black-line {
+    margin-top: 5px;
+    height: 38px;
+    background-color: #303030;
+}
+
+.card__logo {
+    height: 20px;
+}
+
+.cardcolorc{
+  font-size: .7rem;
+  position: absolute;
+  bottom: 117px;
+  right: 18px;
+  font-size: .6rem;
+}
+
+.banelco{
+  position: absolute;
+  bottom: 11px !important;
+  right: 6rem !important;
+  height: 30px;
+}
+
+.link{
+  position: absolute;
+  bottom: 9px !important;
+  right: 8rem !important;
+  height: 33px;
+  color: #fff;
+}
+
+.card__logoi {
+  height: 25px;
+}
+
+.card__front-logoi{
+    position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.cardfrontColor{
+  position: absolute;
+  bottom: -3px;
+  right: 14px;
+  font-size: .6rem;
+}
+
+.card__front-logo{
+      position: absolute;
+      bottom: 29px;
+      right: 13px;
+}
+.card__square {
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 1rem !important;
+}
+
+.card_numer {
+    display: block;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.card__space-75 {
+    width: 60%;
+    float: left;
+}
+
+.card__space-25 {
+    width: 25%;
+    float: left;
+}
+
+.card__label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+}
+
+.card__info {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card__back-content {
+    padding: 15px 15px 0;
+}
+.card__secret--last {
+    color: #303030;
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+}
+
+.card__secret {
+    padding: 5px 12px;
+    background-color: #fff;
+    position:relative;
+}
+
+.card__secret:before{
+  content:'';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: calc(100% + 6px);
+  width: calc(100% - 42px);
+  border-radius: 4px;
+  background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+}
+
+.card__back-logo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.card__back-square {
+    position: absolute;
+    bottom: 25px;
+}
+
+.cardy:hover .card__front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.cardy:hover .card__back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+
+.credit-card {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  width: 95%;
+  max-width: 250px;
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 4px 0 #cfd7df;
+  min-height: 60px;
+  padding: 13px;
+  color: #efefef;
+}
+
+.credit-card.selectable:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.credit-card-last4 {
+  font-family: "PT Mono", Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.credit-card-expiry {
+    font-family: "PT Mono", Helvetica, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+}
+
+.credit-card::after {
+  content: " ";
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.credit-card.visa::after {
+  height: 16px;
+  width: 50px;
+  background-image: url('data:image/png;base64,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');
+}
+
+
+
+
+
+
+
