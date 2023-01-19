@@ -18,3 +18,5 @@ Aqui les comparto un par de imagenes para que puedan observar el proyecto.
 ![15](https://user-images.githubusercontent.com/108957904/200944259-2907bee4-a4d3-445b-bc83-c55cabcebc2d.png)
 ![16](https://user-images.githubusercontent.com/108957904/200944276-75b77856-64a7-43e3-bff2-deb75b66a9fc.png)
 ![17](https://user-images.githubusercontent.com/108957904/200944293-c045bca6-e121-4a91-9d7a-dabca20e19f4.png)
+![127 0 0 1_5502_index html (3)](https://user-images.githubusercontent.com/108957904/213386656-56f3f606-9c78-43c9-9095-0f0255888595.png)
+![127 0 0 1_5502_index html (4)](https://user-images.githubusercontent.com/108957904/213386661-bf3edeca-ee3e-4fe6-af69-9b4cc121aa85.png)
